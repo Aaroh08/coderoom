@@ -10,29 +10,37 @@
 > coderoom@1.0.0 test
 > node --test tests/*.test.mjs
 
-(node:12180) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(node:27720) ExperimentalWarning: SQLite is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
-✔ workspace validates input and requires invite capability (454.3535ms)
-✔ cross-origin mutations are denied (46.7831ms)
-✔ concurrent offline text and tasks converge without losing independent edits (80.5751ms)
-✔ sync is idempotent, malformed updates rejected, history records real checkpoints (69.0149ms)
-✔ rotating an invite revokes the prior capability (44.9927ms)
-(node:2860) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+✔ workspace validates input and requires invite capability (169.854ms)
+✔ cross-origin mutations are denied (31.5342ms)
+✔ concurrent offline text and tasks converge without losing independent edits (54.0924ms)
+✔ sync is idempotent, malformed updates rejected, history records real checkpoints (45.9924ms)
+✔ rotating an invite revokes the prior capability (36.902ms)
+(node:26816) ExperimentalWarning: SQLite is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
-✔ runs real solutions and reports incorrect cases (627.6961ms)
-✔ host APIs are absent (138.1799ms)
-✔ infinite code is interrupted and later execution still succeeds (1246.9008ms)
-✔ syntax errors return structured errors (125.1234ms)
-✔ run route requires authorization and validates case structure (506.6294ms)
-(node:26652) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+✔ runs real solutions and reports incorrect cases (158.581ms)
+✔ host APIs are absent (190.225ms)
+✔ infinite code is interrupted and later execution still succeeds (1222.7085ms)
+✔ syntax errors return structured errors (87.4951ms)
+✔ run route requires authorization and validates case structure (244.6316ms)
+(node:22540) ExperimentalWarning: SQLite is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
-✔ SQLite state survives closing and reopening the application (109.7136ms)
-✔ ten independently edited clients merge and duplicate retries do not erase work (534.2593ms)
-ℹ tests 12
+✔ invalid JSON shapes return client errors instead of server errors (133.5899ms)
+✔ unknown hosts are rejected even without Origin (29.4398ms)
+✔ workspace export is authenticated and never includes access secrets (29.9407ms)
+✔ deployment rejects invalid ports and requires an explicit external origin (4.151ms)
+✔ external TLS origin and workspace capacity are enforced (19.6006ms)
+✔ online WAL backup restores source data and refuses overwrites (54.459ms)
+(node:26768) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ SQLite state survives closing and reopening the application (46.1867ms)
+✔ ten independently edited clients merge and duplicate retries do not erase work (294.6226ms)
+ℹ tests 18
 ℹ suites 0
-ℹ pass 12
+ℹ pass 18
 ℹ fail 0
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 6589.4528
+ℹ duration_ms 2538.4531

@@ -1,3 +1,4 @@
+import { listen } from "./runtime.mjs";
 import { createApp, finish } from "./core.mjs";
 import { execute } from "./executor.mjs";
 export function application(options) {
@@ -17,12 +18,10 @@ export function application(options) {
         (t) => !t || !Array.isArray(t.args) || !Object.hasOwn(t, "expected"),
       )
     )
-      return res
-        .status(400)
-        .json({
-          error:
-            "Provide JavaScript (max 20k characters) and 1–20 JSON cases with args and expected",
-        });
+      return res.status(400).json({
+        error:
+          "Provide JavaScript (max 20k characters) and 1–20 JSON cases with args and expected",
+      });
     if (running >= 2)
       return res
         .status(429)
@@ -39,7 +38,5 @@ export function application(options) {
 }
 if (process.argv[1]?.endsWith("server.mjs")) {
   const s = application();
-  s.app.listen(s.config.port, "127.0.0.1", () =>
-    console.log("CodeRoom http://127.0.0.1:" + s.config.port),
-  );
+  listen(s);
 }
