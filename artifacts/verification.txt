@@ -1,0 +1,38 @@
+
+> coderoom@1.0.0 check
+> npm run build && npm test
+
+
+> coderoom@1.0.0 build
+> node build.mjs
+
+
+> coderoom@1.0.0 test
+> node --test tests/*.test.mjs
+
+(node:12180) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ workspace validates input and requires invite capability (454.3535ms)
+✔ cross-origin mutations are denied (46.7831ms)
+✔ concurrent offline text and tasks converge without losing independent edits (80.5751ms)
+✔ sync is idempotent, malformed updates rejected, history records real checkpoints (69.0149ms)
+✔ rotating an invite revokes the prior capability (44.9927ms)
+(node:2860) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ runs real solutions and reports incorrect cases (627.6961ms)
+✔ host APIs are absent (138.1799ms)
+✔ infinite code is interrupted and later execution still succeeds (1246.9008ms)
+✔ syntax errors return structured errors (125.1234ms)
+✔ run route requires authorization and validates case structure (506.6294ms)
+(node:26652) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ SQLite state survives closing and reopening the application (109.7136ms)
+✔ ten independently edited clients merge and duplicate retries do not erase work (534.2593ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6589.4528

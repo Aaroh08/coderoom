@@ -1,0 +1,7 @@
+{
+  "slug": "coderoom",
+  "name": "CodeRoom",
+  "port": 5071,
+  "title": "The interview room, rethought.",
+  "description": "Collaborate on code. Run meaningful tests. Review how the solution evolved."
+}
